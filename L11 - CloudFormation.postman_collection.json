@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "01ad2de4-e745-465c-8da3-ffadd0f016dd",
+    "name": "L11 - CloudFormation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14840399"
+  },
+  "item": [
+    {
+      "name": "Vote",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"option\": \"Option1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{https://.../live}}/vote",
+          "host": [
+            "{{https://.../live}}"
+          ],
+          "path": [
+            "vote"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
